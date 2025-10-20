@@ -555,6 +555,10 @@ body {
   top: 4% !important;
 }
 
+.sparkles, .hearts {
+    display: none; /* ẩn bớt hiệu ứng phụ */
+  }
+
 }
 
 
