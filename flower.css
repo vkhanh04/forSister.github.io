@@ -48,7 +48,7 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-#envelope, .flap, .letter, .heart, .sparkle {
+#envelope, .flap, .letter{
   will-change: transform, opacity;
 }
 
@@ -217,54 +217,6 @@ body {
 
 .corner-tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
 .corner-br { bottom: 8px; right: 8px; border-left: none; border-top: none; }
-
-.hearts, .sparkles {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.heart, .sparkle {
-  position: absolute;
-  bottom: 0;
-  pointer-events: none;
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 0;
-  width: 20px;
-  height: 32px;
-  background: var(--color-heart);
-  border-radius: 20px 20px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-
-.heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-.sparkle {
-  width: 6px;
-  height: 6px;
-  background: var(--color-sparkle);
-  border-radius: 50%;
-  animation: sparkleTwinkle 1s infinite;
-}
-
-.close .heart,
-.close .sparkle {
-  opacity: 0;
-  animation: none;
-}
 
 .a1 { left: 20%; transform: scale(0.6); animation: slideUp 4s linear infinite, sideSway 2s ease-in-out infinite alternate; }
 .a2 { left: 55%; animation: slideUp 5s linear infinite, sideSway 4s ease-in-out infinite alternate; }
@@ -558,10 +510,6 @@ body {
   right: 8% !important;
   top: 4% !important;
 }
-
-.sparkles, .hearts {
-    display: none; /* ẩn bớt hiệu ứng phụ */
-  }
 
 }
 
@@ -910,22 +858,6 @@ body {
     padding: 6px 15px;
     font-size: 12px;
     margin: 15px;
-  }
-  
-  .hearts, .sparkles {
-    top: 50px;
-  }
-  
-  .heart:before,
-  .heart:after {
-    left: 15px;
-    width: 15px;
-    height: 24px;
-  }
-  
-  .sparkle {
-    width: 4px;
-    height: 4px;
   }
 
   .box-body {
