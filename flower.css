@@ -48,6 +48,10 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+#envelope, .flap, .letter, .heart, .sparkle {
+  will-change: transform, opacity;
+}
+
 #envelope {
   position: relative;
   width: 420px;
